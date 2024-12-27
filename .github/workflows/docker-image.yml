@@ -36,3 +36,6 @@ jobs:
           annotations: ${{ steps.meta.outputs.annotations }}
           provenance: true
           sbom: true
+
+      - name: Docker Image Scan
+        uses: docker/scan-action@v2
